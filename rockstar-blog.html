@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Test</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+
+  <style>
+   body {
+  background-color: #f5f1e6;
+  font-family: 'Ruslan Display', serif;
+  margin: 0;
+  padding: 40px;
+}
+
+.layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.sidebar {
+  position: fixed;
+  left: 40px;
+  top: 35%;
+  border:#e09292 2px solid;
+  transform: translateY(-50%);
+  width: 220px;
+}
+
+/* основной контент — по центру экрана */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar-link {
+  display: block;
+  margin-bottom: 12px;
+  color: #000;
+  text-decoration: none;
+}
+
+.sidebar-link:hover {
+  text-decoration: underline;
+}
+
+.content {
+  flex: 1;
+}
+
+.content h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.image-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-main {
+  width: 300px;
+  height: auto;
+}
+
+.img-small {
+  width: 120px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.image-wrap a:hover img {
+  transform: scale(1.03);
+}
+
+.image-wrap img {
+  transition: transform 0.15s ease;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.img-small {
+  width: 120px;
+  height: auto;
+  margin-top: 20px;
+  animation: float 2.5s ease-in-out infinite;
+}
+  </style>
+</head>
+
+<body>
+  <div class="layout">
+    <div class="sidebar">
+      <h2>как стать мусулманом</h2>
+      <a href="https://www.youtube.com/watch?v=mjySnzjBeBY&list=PLK_aw3CMJI1Kbyua963S9xpFEQc8rQDSY" class="sidebar-link">коран по буквам</a>
+      <a href="https://www.youtube.com/watch?v=OFtxxmHeW9A&list=PLXFf9dMOKUFCZTrvFBN0ihhVBns1TPeAS" class="sidebar-link">арабский язык: учим чтобы читать коран</a>
+      <a href="https://www.youtube.com/watch?v=x8wH5tS19KM&list=RDx8wH5tS19KM&start_radio=1" class="sidebar-link">учеба под жесткий басс буст</a>
+      <a href="https://www.youtube.com/watch?v=4BIQvdIppyk&list=PLfLt4Ea_bBuTxmllNtZfQGo_UL8r5NIAV" class="sidebar-link">халяльные танцы</a>
+      <a href="https://www.youtube.com/watch?v=m8j4NbfJQ5E" class="sidebar-link">что такое харам?</a>
+    </div>
+
+    <div class="content">
+      <h1>че ты, дагестанец</h1>
+
+      <div class="image-wrap">
+        <a href="https://www.youtube.com/watch?v=wp3luWMwSpQ" target="_blank" rel="noopener">
+          <img src="labuba.png" class="img-main" alt="">
+        </a>
+        <img src="arrows.png" class="img-small" alt="">
+      </div>
+    </div>
+  </div>
+</body
+</html>
